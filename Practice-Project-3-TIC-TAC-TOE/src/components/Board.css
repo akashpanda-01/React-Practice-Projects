@@ -1,0 +1,30 @@
+.board {
+  justify-content: center;
+  width: 600px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.boxes{
+    display: flex;
+    height: 100px;
+    width: 100px;
+    background: #1f3540;
+    border: 4px soild #0f1b23;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.boxes {
+  display: flex;
+  height: 130px;
+  width: 130px;
+  background: #1f3540;
+  border: 4px soild #0f1b23;
+  border-radius: 16px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
