@@ -8,6 +8,14 @@ body {
   text-align: center;
 }
 
+.correct-bg{
+  background-color: green;
+}
+
+.incorrect-bg{
+  background-color: #222;
+}
+
 /* Container */
 .container {
   width: 100%;

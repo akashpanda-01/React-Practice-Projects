@@ -5,7 +5,7 @@ import { useState } from "react";
 
 
 const Board = () => {
-  import
+  
 
   return (
     <>

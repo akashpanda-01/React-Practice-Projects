@@ -15,7 +15,6 @@ const wins = [
   [0, 4, 8],
 ];
 
-
 const TicTacToe = () => {
   const [count, setCount] = useState(["", "", "", "", "", "", "", "", ""]);
   const [turn, setTurn] = useState("X");
@@ -44,7 +43,7 @@ const TicTacToe = () => {
     setCount(updateBoard);
 
     const win = checkWinner(updateBoard);
-    if(win){
+    if (win) {
       setWinner(win);
       return;
     }
@@ -65,48 +64,16 @@ const TicTacToe = () => {
         </h1>
         <h2>{winner}</h2>
         <div className="board">
-          <div className="row1">
-            <div className="boxes" onClick={() => btnClick(0)}>
-              {count[0] === "X" && <img src={cross} />}
-              {count[0] === "O" && <img src={circle} />}
+          {count.map((value, index) => (
+            <div
+              key={index}
+              className="boxes"
+              onClick={() => btnClick(index)}
+            >
+              {value === "X" && <img src={cross} style={{width: "70px", height: "70px"}} />}
+              {value === "O" && <img src={circle} style={{width: "70px", height: "70px"}} />}
             </div>
-            <div className="boxes" onClick={() => btnClick(1)}>
-              {count[1] === "X" && <img src={cross} />}
-              {count[1] === "O" && <img src={circle} />}
-            </div>
-            <div className="boxes" onClick={() => btnClick(2)}>
-              {count[2] === "X" && <img src={cross} />}
-              {count[2] === "O" && <img src={circle} />}
-            </div>
-          </div>
-          <div className="row2">
-            <div className="boxes" onClick={() => btnClick(3)}>
-              {count[3] === "X" && <img src={cross} />}
-              {count[3] === "O" && <img src={circle} />}
-            </div>
-            <div className="boxes" onClick={() => btnClick(4)}>
-              {count[4] === "X" && <img src={cross} />}
-              {count[4] === "O" && <img src={circle} />}
-            </div>
-            <div className="boxes" onClick={() => btnClick(5)}>
-              {count[5] === "X" && <img src={cross} />}
-              {count[5] === "O" && <img src={circle} />}
-            </div>
-          </div>
-          <div className="row3">
-            <div className="boxes" onClick={() => btnClick(6)}>
-              {count[6] === "X" && <img src={cross} />}
-              {count[6] === "O" && <img src={circle} />}
-            </div>
-            <div className="boxes" onClick={() => btnClick(7)}>
-              {count[7] === "X" && <img src={cross} />}
-              {count[7] === "O" && <img src={circle} />}
-            </div>
-            <div className="boxes" onClick={() => btnClick(8)}>
-              {count[8] === "X" && <img src={cross} />}
-              {count[8] === "O" && <img src={circle} />}
-            </div>
-          </div>
+          ))}
         </div>
         <button className="reset" onClick={resetGame}>
           Reset

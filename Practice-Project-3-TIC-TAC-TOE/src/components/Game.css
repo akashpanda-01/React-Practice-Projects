@@ -33,27 +33,29 @@
   background: #1f3540;
   font-size: 26px;
   color: #26ffcb;
-  /* margin-top: 25px; */
+  margin-top: 25px;
   /* margin-bottom: 50px; */
 }
 
 .board {
   justify-content: center;
-  width: 600px;
-  height: 500px;
+  width: 420px;
+  height: 420px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin: auto;
 }
 
 .boxes {
   display: flex;
-  height: 130px;
-  width: 130px;
+  height: 120px;
+  width: 120px;
   background: #1f3540;
-  border: 4px soild #0f1b23;
+  border: 4px solid #0f1b23;
   border-radius: 16px;
   cursor: pointer;
-  margin-left: 5px;
-  margin-bottom: 5px;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
 }

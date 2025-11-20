@@ -1,7 +1,7 @@
 {
   "name": "package.json",
   "version": "1.0.0",
-  "description": "Guess Number Game",
+  "description": "Re-creating Tic-Tac-Toe game",
   "main": "index.jsx",
   "scripts": {
     "dev": "vite",
@@ -16,7 +16,6 @@
     "react-dom": "^19.2.0"
   },
   "devDependencies": {
-    "vite": "^7.2.2",
-    "typeface-press-start-2p": "^1.1.13"
+    "vite": "^7.2.2"
   }
 }
