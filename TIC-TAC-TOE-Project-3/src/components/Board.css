@@ -1,0 +1,17 @@
+.boxes {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(145deg, #2c3b50, #1e2b3a);
+  border-radius: 10px;
+  box-shadow: inset 4px 4px 8px #141b23, inset -4px -4px 8px #32445e;
+  cursor: pointer;
+
+  font-size: 50px;
+  color: #95d7ff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: 0.2s;
+}
